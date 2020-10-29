@@ -1,11 +1,19 @@
-import React from 'react'
-const BestPokemon = () => {
-  const abilities = ['Anticipation', 'Adaptability', 'Run-Away']
+import React,{useState} from 'react';
+
+const CaughtPokemon = (props) =>{
+  const [caught, setCaught]=useState(0);
+  
+  const catchPokemon = () => {
+    setCaught(caught + 1)
+  }
+    
   return (
-    <div>
-      <p>My favourite Pokemon is Squirtle</p>
-      <ul>{abilities.map(ability => <li key={ability}>{ability}</li>)}</ul>
+    <div> 
+     <button onClick={catchPokemon}>Click me</button>
+     <p>Caught {caught} Pokemon on {props.date}</p>
     </div>
   )
+
 }
-export default App;
+
+export default CaughtPokemon;

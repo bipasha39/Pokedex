@@ -1,7 +1,11 @@
 import React from 'react'
-function CaughtPokemon () {
-    const date = new Date().toLocaleDateString()
-    return <p>Caught 0 Pokemon on {date}</p>
-  }
-
-export default App;
+const BestPokemon = (props) => {
+  console.log("BestPokemon",props);
+  return (
+    <div>
+      <p>My favourite Pokemon is Squirtle</p>
+      <ul>{props.abilities.map(ability => <li key={ability}>{ability}</li>)}</ul>
+    </div>
+  )
+}
+export default BestPokemon;
