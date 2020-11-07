@@ -9,12 +9,16 @@ const CaughtPokemon = (props) =>{
     setPokemonNameInput("")
 
     //stretch goal
-    if(pokemonNameInput !== ""){
-        setCaught(caught.concat(pokemonNameInput));
-        setPokemonNameInput("")
-    }
+
+  //   const catchPokemon = () => {
+  //   if(pokemonNameInput !== ""){
+  //     return{
+  //       setCaught(caught.concat(pokemonNameInput));
+  //       setPokemonNameInput("")}
+  //   }
     
-  }
+  // }
+
   function handleInputChange(event){
    setPokemonNameInput (event.target.value)
 
