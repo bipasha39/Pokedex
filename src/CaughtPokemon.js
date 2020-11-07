@@ -6,7 +6,7 @@ const CaughtPokemon = (props) =>{
   
   const catchPokemon = () => {
     setCaught(caught.concat(pokemonNameInput));
-    setPokemonNameInput("")
+    setPokemonNameInput("")}
 
     //stretch goal
 
@@ -40,4 +40,4 @@ const CaughtPokemon = (props) =>{
 
 }
 
-export default CaughtPokemon;
+export default CaughtPokemon ;
