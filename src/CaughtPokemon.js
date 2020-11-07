@@ -6,7 +6,14 @@ const CaughtPokemon = (props) =>{
   
   const catchPokemon = () => {
     setCaught(caught.concat(pokemonNameInput));
-    console.log(caught.length);
+    setPokemonNameInput("")
+
+    //stretch goal
+    if(pokemonNameInput !== ""){
+        setCaught(caught.concat(pokemonNameInput));
+        setPokemonNameInput("")
+    }
+    
   }
   function handleInputChange(event){
    setPokemonNameInput (event.target.value)
